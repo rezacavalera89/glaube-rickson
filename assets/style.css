@@ -1,1 +1,163 @@
-
+body{
+    font-family: Inter;
+    font-style: normal;
+}
+#serie-posts {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  #serie-posts p,
+  h1,
+  h2 {
+    margin: 0%;
+  }
+  
+  #serie-posts>h2 {
+    color: #273644;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  
+  #serie-posts>p {
+    color: #8D9AA6;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 160%;
+    margin-bottom: 35px;
+  
+  }
+  
+  #posts-container {
+    display: flex;
+    gap: 27px;
+  }
+  
+  #serie-posts>div {
+    display: flex;
+    width: min-content;
+    flex-direction: column;
+  }
+  
+  
+  .post {
+    display: grid;
+    height: 220px;
+    border-radius: 5px;
+    border: 1px solid #EB5151;
+    padding-left: 20px;
+    padding-top: 23px;
+    padding-right: 21px;
+    padding-bottom: 17px;
+  }
+  
+  .post-meio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: min-content;
+  }
+  
+  .data-post {
+    color: #EB5151;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 160%;
+  }
+  
+  .data-post span {
+    font-weight: 700;
+  }
+  
+  .data-post,
+  .categoria-post {
+    width: 240px;
+  }
+  
+  .titulo-post {
+    width: 245px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  
+  .titulo-post>a {
+    color: #C11616;
+    text-decoration: none;
+  }
+  
+  .categoria-post {
+    align-self: flex-end;
+    padding-top: 9px;
+    border-top: 1px solid #EB5151;
+  }
+  
+  .categoria-post>a {
+    color: #EB5151;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+  }
+  
+  .categoria-post span {
+    color: #8D9AA6;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+  }
+  
+  #coletaneas-link {
+    height: 31px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #coletaneas-link>a {
+    align-self: flex-end;
+  }
+  
+  #coletaneas-link>img {
+    align-self: flex-start;
+  }
+  
+  #awe {
+    background-color: #EFF2F7;
+    display: flex;
+    justify-content: center;
+    padding: 13.49px 0px 14.42px 0px;
+  }
+  
+  #blog {
+    background-color: #F9FAFC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 8.87% 0% 8.87%;
+  }
+  
+  #blog-indices {
+    width: min-content;
+  }
+  
+  #no_underline,
+  #underline {
+    color: #3C4B58;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.8px;
+  }
+  
+  #no_underline {
+    text-decoration: none;
+  }
+  
+  #underline {
+    text-decoration-color: #3C4B58;
+  }
