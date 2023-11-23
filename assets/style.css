@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 body{
-    font-family: Inter;
-    font-style: normal;
+  font-family: Inter;
+  font-style: normal;
 }
 #serie-posts {
     display: flex;
     justify-content: center;
   
-  }
+}
   
   #serie-posts p,
   h1,
@@ -162,7 +161,7 @@ body{
   #underline {
     text-decoration-color: #3C4B58;
   }
-=======
+
 html {
   height: 100%;
   width: 100%;
@@ -361,9 +360,81 @@ main h1 {
   justify-content: space-evenly;
 }
 
+#últimos-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 87px;
+  padding-bottom: 20px;
+}
 
+#últimos-posts-container {
+  display: flex;
+  flex-direction: column;
+}
 
+#últimos-posts p {
+  margin: 0px;
+}
 
+#últimos-posts>p>a {
+  color: #2648A1;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 160%;
+  text-decoration-line: underline;
+}
 
+#últimos-posts-container>p {
+  align-self: flex-end;
+  margin-top: 17px;
+}
 
->>>>>>> 096d15cfec3dcae11af09cd7777d2424fc6a94a3
+#texto-h1 {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #8D9AA6;
+  width: 787px;
+}
+
+#texto-h1 h1 {
+  color: #8D9AA6;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.post-ultimo>div {
+  display: flex;
+  gap: 22px;
+}
+
+.post-ultimo {
+  width: 787px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #D3DDE6;
+  margin-top: 34px;
+}
+
+.post-ultimo>h2>a {
+  color: #273644;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 160%;
+  text-decoration: none;
+}
+
+.post-ultimo p {
+  color: #8D9AA6;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.post-ultimo p>span>a {
+  color: #3C4B58;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 160%;
+  text-decoration-line: underline;
+}
