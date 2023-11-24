@@ -1,22 +1,92 @@
-body{
+body {
   font-family: Inter;
   font-style: normal;
+  margin: 0%;
 }
+
 #serie-posts {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding: 44px 0px 133px 0px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
   
 }
-  
+
+#autor{
+  display: flex;
+  gap: 27px;
+  padding: 8px 0px 9px 0px;
+  background: #EFF2F7;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#por{
+  color:#3C4B58;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+
+#nome-autor > a{
+  color: #EB5151;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+
+#autor>p{
+  margin-left: 33px;
+  height: min-content;
+  color: #3C4B58;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+#rosto{
+  display: flex;
+  justify-content: center;
+  margin-top: 91px;
+}  
+
+#titulo{
+  position: relative;
+}
+
+#titulo > img{
+  position: absolute;
+  top: -30px;
+  left: -100px;
+}
+
+#rosto h1{
+  margin-bottom: 37px;
+}
+#rosto>div{
+  width: 789px;
+}
+
+#rosto>div>p{
+  margin-bottom: 53px;
+  color: #707C8C;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 160%; 
+  }
+
+
   #serie-posts p,
   h1,
   h2 {
     margin: 0%;
   }
   
-  #serie-posts>h2 {
+  #serie-posts h2{
     color: #273644;
-    font-family: Inter;
     font-size: 26px;
     font-weight: 800;
     line-height: 120%;
@@ -25,18 +95,21 @@ body{
     margin-bottom: 4px;
   }
   
-  #serie-posts>p {
+  #subtitulo{
     color: #8D9AA6;
     font-size: 16px;
     font-weight: 300;
     line-height: 160%;
     margin-bottom: 35px;
+    margin:0;
   
   }
   
   #posts-container {
     display: flex;
     gap: 27px;
+    margin-bottom: 12px;
+    margin-top: 35px;
   }
   
   #serie-posts>div {
@@ -44,6 +117,7 @@ body{
     width: min-content;
     flex-direction: column;
   }
+
   
   
   .post {
@@ -119,11 +193,16 @@ body{
     justify-content: space-between;
   }
   
-  #coletaneas-link>a {
+  #todas-coletaneas{
     align-self: flex-end;
+    color: #2648A1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 160%;
+    text-decoration-line: underline;
   }
   
-  #coletaneas-link>img {
+  #coletaneas-link>a>img {
     align-self: flex-start;
   }
   
@@ -139,8 +218,14 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0% 8.87% 0% 8.87%;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
   }
   
+  #blog > a{
+    height: min-content;
+  }
+
   #blog-indices {
     width: min-content;
   }
@@ -165,12 +250,6 @@ body{
 html {
   height: 100%;
   width: 100%;
-}
-
-body {
-  font-family: Inter;
-  font-style: normal;
-  margin: 0%;
 }
 
 * {
@@ -248,7 +327,7 @@ main {
 }
 
 main h1 {
-  color: var(--neutras-aco, #273644);
+  color: #273644;
   font-size: 40px;
   font-weight: 800;
   line-height: 56px;
@@ -262,30 +341,59 @@ main h1 {
   /* 33.6px */
 }
 
-#seta {
+#seta{
   display: flex;
   align-items: center;
   gap: 36px;
+  margin-bottom: 55px;
 }
 
-#seta>p {
-  color: var(--neutras-aco, #273644);
+#seta>a>p {
+  color: #273644;
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
   line-height: 25.6px;
+  padding: 1px 25px 4px 11px;
+  background: linear-gradient(90deg, #EFF0F2 0%, rgba(249, 250, 252, 0.00) 50.31%);
+}
+#seta>a{
+  text-decoration: none;
+}
+#gradiente{
+  border-radius: 5px;
+  background: linear-gradient(90deg, #F00 0%, rgba(255, 0, 0, 0.46) 60.12%);
+  width: 81px;
+  height: 4px;
+  margin-bottom: 8px;
 }
 
 #categorias h1 {
-  color: var(--neutras-gray, #8D9AA6);
+  color: #8D9AA6;
   font-size: 26px;
   font-weight: 300;
   line-height: 41.6px;
+  margin-bottom: 12px;
+}
+
+#ver-todas-as-categorias{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ver-todas-as-categorias > a{
+  color: #8D9AA6;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 160%;
+  text-decoration-line: underline;
 }
 
 #categoria-posts-seção {
   display: flex;
   gap: 17px;
+  margin-bottom: 18px;
 }
 
 
@@ -301,9 +409,7 @@ main h1 {
   padding: 3px 16px 3px 16px;
   border: 1px solid #EB5151;
   color: #EB5151;
-  font-family: Inter;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
   line-height: 160%;
 }
@@ -342,17 +448,14 @@ main h1 {
 }
 
 #fotos h1 {
-  color: var(--ui-color-danger-light, #EB5151);
-  font-family: Inter;
+  color: #EB5151;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: 41.6px;
 }
 
 #fotos h2 {
-  color: var(--ui-color-danger-light, #EB5151);
-  font-family: Inter;
+  color: #EB5151;
   font-size: 26px;
   font-weight: 700;
   line-height: 41.6px;
@@ -377,8 +480,9 @@ main h1 {
   margin: 0px;
 }
 
-#últimos-posts>p>a {
+#últimos-posts-container>p>a {
   color: #2648A1;
+  text-align: right;
   font-size: 16px;
   font-weight: 300;
   line-height: 160%;
@@ -398,7 +502,6 @@ main h1 {
 
 #texto-h1 h1 {
   color: #8D9AA6;
-  font-family: Inter;
   font-size: 26px;
   font-weight: 300;
   line-height: 160%;
